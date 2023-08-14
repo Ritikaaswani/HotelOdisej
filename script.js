@@ -51,20 +51,33 @@ tl.from("#nav",{
     opacity:0,
     duration:0.5
 })
-// tl.to("#page2",{
-//   scrollTrigger:{
-//     trigger:"#page2",
-//     scroller:"#main",
-//     start:"top 90%",
-//     end:"top 80%",
-//     pin:true,
-//     scrub:2,
-//     markers:true,
+tl.to("#page1>h1 , #page1>h3",{
+  scrollTrigger:{
+    trigger:"#page1>h1, #page1>h3",
+    scroller:"#main",
+    markers:true,
+    start:"top 0",
+    end:"top -10%",
+    scrub:2
+  },
+  scale:0.6,
+  duration:0.5
+})
+
+tl.to("#page2",{
+  scrollTrigger:{
+    trigger:"#page2",
+    scroller:"#main",
+    start:"top 90%",
+    end:"top 80%",
+    pin:true,
+    scrub:2,
+    markers:true,
     
-//   },
-//   y:-100,
-//   duration:0.8
-// })
+  },
+  y:-200,
+  duration:0.8
+})
 
 function center1(){
     var clutter = "";
