@@ -55,13 +55,13 @@ tl.to("#page1>h1 , #page1>h3",{
   scrollTrigger:{
     trigger:"#page1>h1, #page1>h3",
     scroller:"#main",
-    markers:true,
+    // markers:true,
     start:"top 0",
     end:"top -10%",
     scrub:2
   },
   scale:0.6,
-  duration:0.5
+  duration:0.4
 })
 
 tl.to("#page2",{
@@ -70,9 +70,9 @@ tl.to("#page2",{
     scroller:"#main",
     start:"top 90%",
     end:"top 80%",
-    pin:true,
+    // pin:true,
     scrub:2,
-    markers:true,
+    // markers:true,
     
   },
   y:-200,
@@ -93,7 +93,7 @@ tl.to("#page2>h2>span",{
     scrollTrigger:{
         trigger:"#page2>h2>span",
         scroller:"#main",
-        start:"top 40%",
+        start:"top 30%",
         end:"160% top",
         scrub:2,
         // markers:true,
@@ -145,9 +145,9 @@ var tl1 = gsap.timeline({
     trigger:"#page3 ",
     scroller:"#main",
     scrub:2,
-    start:"top 4%",
-    end:"top -20%",
-    // markers:"true",
+    start:"top 15%",
+    end:"top 0%",
+    markers:"true",
 
   },
 })
@@ -166,8 +166,8 @@ tl.from("#part1 img",{
     trigger:"#part1 img",
     scroller:"#main",
     scrub:2,
-    start:"top 95%",
-    end:"top 80%",
+    start:"top 80%",
+    end:"top 70%",
     // markers:"true",
 
   },
