@@ -147,7 +147,7 @@ var tl1 = gsap.timeline({
     scrub:2,
     start:"top 15%",
     end:"top 0%",
-    markers:"true",
+    // markers:"true",
 
   },
 })
