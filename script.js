@@ -93,8 +93,8 @@ tl.to("#page2>h2>span",{
     scrollTrigger:{
         trigger:"#page2>h2>span",
         scroller:"#main",
-        start:"top 30%",
-        end:"160% top",
+        start:"top 60%",
+        end:"100% top",
         scrub:2,
         // markers:true,
         
@@ -297,6 +297,35 @@ all.forEach(function(e){
     }
     
    })
+   document.querySelector("#navpart2 button:nth-child(1)").addEventListener("mouseenter",function(){
+    gsap.from("#navpart2 button:nth-child(1)>p",{
+        opacity:0,
+        duration:.5,
+        y:10,
+        ease: Expo.easeInOut
+    })
+   
+})
+
+
+document.querySelector("#navpart2 button:nth-child(2)").addEventListener("mouseenter",function(){
+  gsap.from("#navpart2 button:nth-child(2)>p",{
+      opacity:0,
+      duration:.5,
+      y:10,
+      ease: Expo.easeInOut
+  })
+  
+})
+document.querySelector("#part1>h3>button>i").addEventListener("mouseenter",function(){
+  gsap.from("#part1>h3>button>i",{
+      opacity:0,
+      duration:.5,
+      x:20,
+      ease: Expo.easeInOut
+  })
+  
+})
 
 
 
