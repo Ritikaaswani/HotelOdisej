@@ -199,7 +199,7 @@ all.forEach(function(e){
   var elemm2=e.childNodes[1].querySelector('.head h2')
   var elemm3=e.childNodes[1].querySelector('.head h3')
   var elemm4=e.childNodes[1].querySelector('.head ')
-  var elemm5=e.childNodes[1].querySelector('#head4 ')
+  
   var originalContent = elem2.innerHTML
     e.addEventListener("mouseenter",function(){
     elemm1.style.transform="translateX(0)"
@@ -210,19 +210,19 @@ all.forEach(function(e){
     elem2.style.backgroundColor="#fff"
     elem2.style.color="#5B6647"
     elem2.innerHTML='<i class="ri-arrow-right-line"></i>'
-    elemm5.style.marginLeft = "-40px"
+    
     
    })
    e.addEventListener("mouseleave",function(){
     elemm1.style.transform="translateX(-100%)"
-    elemm4.style.transform="translateX(-80%)"
+    elemm4.style.transform="translateX(-90%)"
     elemm2.style.color ="#5B6647"
     elemm3.style.color="#5B6647"
     e.style.backgroundColor="transparent"
     elem2.style.backgroundColor="#5B6647"
     elem2.style.color="#fff"
     elem2.innerHTML= originalContent;
-    elemm5.style.marginLeft = "60px"
+   
     
    })
  
